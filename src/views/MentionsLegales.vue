@@ -4,6 +4,7 @@
 
 
 <template>
+    <div class="wrapper">
     <h1>Mentions légales</h1>
     <h2>Identité de l'éditeur :</h2>
     <p>
@@ -41,9 +42,19 @@
     <p>
     Mail <br>
     Numéro de téléphone</p>
+    </div>
 </template>
 
 
 <style scoped>
+@font-face{
+    font-family: "Tilt";
+    src: url('../../public/fonts/TiltWarp.ttf')
+}
+.wrapper{
+    font-family: "Tilt", Calibri, sans-serif;
+    width: 400px;
+    margin: auto;
+}
 
 </style>
