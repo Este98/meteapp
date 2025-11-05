@@ -47,7 +47,7 @@ watch(ville, chargerMeteo);
       </div>
     </form>
 
-    <h1 class="title">{{meteo.city}}</h1>
+    <h1 class="title">{{}}</h1>
 
     <div class="mt-4">
       <div v-if="loading" class="alert alert-secondary">Chargement...</div>
