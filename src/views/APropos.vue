@@ -5,24 +5,62 @@ import { ref } from "vue";
 
 <template>
 
-    <div class="about">
-    <h1>À propos de notre application météo</h1>
-    <p>
-      Cette application affiche la météo en temps réel à partir d’une API publique.
-      Elle a été développée avec Vue.js et vite par Méganne, Esteban, Khalil et Benjamin. 
-    </p>
+   
+<section class="about">
+  <h1>Qui sommes-nous ?</h1>
+  <p>
+    <strong>METEAPP</strong> est une application web qui vous permet de consulter la météo en temps réel, 
+    dans votre ville.
+  </p>
 
-    <section>
-      <h2>Notre mission</h2>
-      <p>
-        Fournir des informations météorologiques précises et rapides, avec une interface simple et moderne.
-      </p>
-    </section>
-  </div>
+  <p>
+    Notre mission est simple : rendre l’information météorologique accessible, 
+    claire et agréable à consulter, sur tous les appareils et surtout, TOUS LES CAPTURER !!!!!!
+  </p>
 
+  <p>
+    Ce projet a été conçu par <strong>Mégane</strong>, <strong>Esteban</strong>, <strong>Khalil</strong> et <strong>Benjamin</strong> dans le cadre 
+    de la formation <strong>DWWM</strong> (Développeur Web et Web Mobile).
+  </p>
+
+
+ 
+    <div class="team-photo">
+      <img src="../../public/images/team.png" alt="Photo de l'équipe METEAPP" />
+    </div>
+
+
+
+
+
+  <p>
+    Nous mettons un point d’honneur à créer une interface moderne, rapide 
+    et respectueuse de la vie privée de nos utilisateurs.
+  </p>
+
+  <p>
+    💌 Pour nous contacter : <br><a href="https://www.linkedin.com/in/m%C3%A9ganne-bats-8454b2251/">Méganne BATS</a><br>
+    <a href="https://www.linkedin.com/in/benjamin-voydie-564aa8331/">Benjamin VOYDIE</a><br>
+    <a href="https://www.linkedin.com/in/khalil-echchine-belkacem-95839736a/">Khalil Echchine</a><br>
+    <a href="https://www.linkedin.com/in/esteban-lerussard-55a865294/">Esteban LERUSSARD</a><br>
+    
+
+  </p>
+  
+</section>
 </template>
 
 
 <style scoped>
+@font-face{
+    font-family: "Tilt";
+    src: url('../../public/fonts/TiltWarp.ttf')
+}
+
+.about{
+    font-family: "Tilt", Calibri, sans-serif;
+    color: hsl(232, 10%, 34%);
+    margin: 20px;
+}
 
 </style>

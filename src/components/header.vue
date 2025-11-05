@@ -1,57 +1,51 @@
 <template>
   <header class="header">
-    <!-- Logo -->
     <div class="logo-container">
-      <img src="public/logo.png" alt="Logo du site" class="logo" />
-      <h1>App Météo</h1>
+      <img src="../../public/images/logo.png" alt="Logo du site" class="logo" />
+      <h1>METEAPP</h1>
     </div>
-
-    <!-- Navigation -->
-    <nav class="nav">
-      <RouterLink to="/">Accueil</RouterLink>
-      <RouterLink to="/about">À propos</RouterLink>
-    </nav>
   </header>
 </template>
 
 <script setup>
-
-import logo from '@/public/logo.png'
 </script>
 
 <style scoped>
+@font-face{
+    font-family: "Tilt";
+    src: url('../../public/fonts/TiltWarp.ttf')
+}
+
 .header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #1e1e2f;
-  color: white;
-  padding: 10px 30px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  justify-content: center;   
+  align-items: center;       
+  padding: 20px 0;
+  height: 160px;             
 }
 
+/* conteneur vertical */
 .logo-container {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;    
+  align-items: center;       
 }
 
+/* logo */
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
 }
 
-.nav {
-  display: flex;
-  gap: 20px;
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
+/* titre */
+h1 {
+    font-family: "Tilt", Calibri, sans-serif;
+  margin-top: 10px;          
+  font-size: 1.8rem;
   font-weight: bold;
 }
+
 
 
 </style>
