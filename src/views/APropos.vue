@@ -1,9 +1,11 @@
 <script setup>
-import { ref } from "vue";
+import Header from '../components/header.vue';
+
 </script>
 
 
 <template>
+    
 
    
 <section class="about">

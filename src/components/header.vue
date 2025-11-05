@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="logo-container">
-      <img src="../../public/images/logo.png" alt="Logo du site" class="logo" />
+      <img src="/images/logo.png" alt="Logo du site" class="logo" />
       <h1>METEAPP</h1>
     </div>
   </header>
