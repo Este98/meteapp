@@ -41,9 +41,10 @@ import Header from '../components/header.vue';
   </p>
 
 <p>
-    💌 Pour nous contacter : <br><a href="https://www.linkedin.com/in/m%C3%A9ganne-bats-8454b2251/">Méganne BATS</a><br>
+    💌 Pour nous contacter : <br><a href="https://www.linkedin.com/in/khalil-echchine-belkacem-95839736a/">Khalil ECHCHINE BELKACEM</a><br>
     <a href="https://www.linkedin.com/in/benjamin-voydie-564aa8331/">Benjamin VOYDIE</a><br>
-    <a href="https://www.linkedin.com/in/khalil-echchine-belkacem-95839736a/">Khalil Echchine</a><br>
+    <a href="https://www.linkedin.com/in/m%C3%A9ganne-bats-8454b2251/">Méganne BATS</a><br>
+    
     <a href="https://www.linkedin.com/in/esteban-lerussard-55a865294/">Esteban LERUSSARD</a><br>
 </p>
   
