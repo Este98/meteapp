@@ -24,7 +24,8 @@
 .header {
   display: flex;
   justify-content: center;   
-  align-items: center;       
+  align-items: center;
+  margin-top: 150px;       
   padding: 20px 0;
   height: 160px;          
 }
@@ -33,7 +34,9 @@
 .logo-container {
   display: flex;
   flex-direction: column;    
-  align-items: center;       
+  align-items: center;
+     
+      
 }
 
 /* logo */
@@ -41,6 +44,7 @@
   width: 100px;
   height: 100px;
   object-fit: contain;
+  margin-left: 10px;
 }
 
 /* titre */
@@ -49,6 +53,8 @@ h1 {
   margin-top: 10px;          
   font-size: 1.8rem;
   font-weight: bold;
+  color: #4E505F;
+  
 }
 
 .link {
