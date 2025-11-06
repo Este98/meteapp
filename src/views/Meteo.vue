@@ -71,9 +71,9 @@ watch(ville, chargerMeteo);
               <p>Soir</p>
             </div>
             <div class="row">
-              <img :src="meteo.current.icon" alt="meteo actuelle" width="64" height="64" />
-              <img :src="meteo.current.icon" alt="meteo actuelle" width="64" height="64" />
-              <img :src="meteo.current.icon" alt="meteo actuelle" width="64" height="64" />
+              <div v-for="i in meteo.icons_hours" :key="i.hour">
+                <img :src="i.icon" alt="meteo de {{ i.hour }}" width="64" height="64" />
+              </div>
             </div>
           </div>
           <div v-for="j in meteo.days" :key="j.day_long" class="row">
