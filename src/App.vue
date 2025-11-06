@@ -16,3 +16,16 @@
   <FooterComponent />
   
 </template>
+
+
+
+<style scoped>
+
+main {
+  flex-direction: row;
+}
+  
+
+
+</style>
+

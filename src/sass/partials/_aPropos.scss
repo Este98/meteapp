@@ -5,8 +5,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* plein écran */
+  height: 50vw; /* plein écran */
   margin: 0;
+  
 }
 
 .about {
@@ -19,5 +20,6 @@ body {
 
 .team-photo{
     text-align: center;
-    
+
 }
+
