@@ -1,8 +1,16 @@
-@use "_var.scss";
-@use "_fonts.scss";
+@use "_var.scss" as *;
+@use "_fonts.scss" as *;
+
+@mixin card-style {
+    background-color: $background-color;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+}
 
 .meteo-view {
-    
+    font-family: "Tilt", Calibri, sans-serif;
+
     .form-list {
         display: flex;
         flex-direction: column;
@@ -17,5 +25,39 @@
 
     .title {
         text-align: center;
+        text-transform: uppercase;
     }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+
+        .card {
+            @include card-style;
+
+            text-align: center;
+            padding: 0 1.2rem;
+            justify-content: space-between;
+
+            .row {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1.5rem;
+
+                .min-max {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 1rem;
+                }
+            }
+
+        }
+    }
+
+    
 }
