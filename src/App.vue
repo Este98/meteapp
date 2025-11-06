@@ -22,7 +22,11 @@ import HeaderComponent from "./components/header.vue";
 .page {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   min-height: 98vh;
+=======
+  
+>>>>>>> origin/benjamin
 }
 
 .main {

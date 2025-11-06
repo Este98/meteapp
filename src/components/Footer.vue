@@ -6,9 +6,10 @@ import { RouterLink } from 'vue-router'
   <footer class="footer">
     <nav aria-label="Footer navigation">
       <ul class="footer-links">
-        <li>
+        <li class="liens-footer">
           <RouterLink :to= "{name: 'MentionsLegales'}" class="nav-link">Mentions légales</RouterLink>
         </li>
+            |  
         <li>
           <RouterLink :to= "{name: 'APropos'}" class="nav-link">À propos de nous</RouterLink>
         </li>

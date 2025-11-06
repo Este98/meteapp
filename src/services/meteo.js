@@ -34,3 +34,4 @@ export async function fetchMeteo(villeCode) {
     icons_hours
   };
 }
+

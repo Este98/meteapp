@@ -5,10 +5,22 @@
         color: hsl(232, 10%, 34%);
         width: 50vw;
         margin: auto;
+        min-height: 100vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        text-align: left; 
+        
+        
+       
 
     h2{
         margin-bottom: 50px;
-    }
+        
+
+
+    }    
 
     h3{
         font-size: 22px;
@@ -16,6 +28,6 @@
     }
 
     p{
-        font-size: 14px;
+        font-size: large;
     }
 }
