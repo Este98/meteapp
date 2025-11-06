@@ -47,13 +47,37 @@ watch(ville, chargerMeteo);
       </div>
     </form>
 
-    <h1 class="title">{{}}</h1>
+    <h2 class="title">Titre</h2>
 
     <div class="mt-4">
       <div v-if="loading" class="alert alert-secondary">Chargement...</div>
       <div v-else-if="error" class="alert alert-danger">Erreur : {{ error }}</div>
 
       <div v-else-if="meteo">
+        <div class="container">
+          <div class="card main-card">
+            <h3 classe="card-title">Date</h3>
+            <div class="row">
+              <img :src="meteo.current.icon" alt="meteo actuelle" width="64" height="64" />
+              <p>{{ meteo.current.tmp }}°C</p>
+              <div class="min-max">
+                <p>Min <br> {{ meteo.current.tmin }}°C</p>
+                <p>Max <br> {{ meteo.current.tmax }}°C</p>
+              </div>
+            </div>
+            <div class="row">
+              <p>Matin</p>
+              <p>Midi</p>
+              <p>Soir</p>
+            </div>
+            <div class="row">
+
+            </div>
+          </div>
+        </div>
+
+
+
         <div class="text-center mb-3">
           <p>{{ meteo.current.condition }} — {{ meteo.current.tmp }}°C</p>
           <img :src="meteo.current.icon" alt="meteo actuelle" width="64" height="64" />
