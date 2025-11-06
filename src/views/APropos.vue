@@ -9,7 +9,7 @@
 <template>
  
 <section class="about">
- <h1>Qui sommes-nous ?</h1>
+ <h2>Qui sommes-nous ?</h2>
  <p>
  <strong>METEAPP</strong> est une application web qui vous permet de consulter la météo en temps réel, 
  dans votre ville.
@@ -43,7 +43,7 @@
  <ul>
  <li><a href="https://www.linkedin.com/in/khalil-echchine-belkacem-95839736a/">Khalil ECHCHINE BELKACEM</a><br></li>
  <li><a href="https://www.linkedin.com/in/benjamin-voydie-564aa8331/">Benjamin VOYDIE</a><br></li>
- <li><a href="https://www.linkedin.com/in/m%C3%A9ganne-bats-8454b2251/">Méganne BATS</a><br></li>    
+ <li><a href="https://www.linkedin.com/in/m%C3%A9ganne-bats-8454b2251/">Méganne BATS</a><br></li> 
  <li> <a href="https://www.linkedin.com/in/esteban-lerussard-55a865294/">Esteban LERUSSARD</a><br></li> 
 </ul>
 
