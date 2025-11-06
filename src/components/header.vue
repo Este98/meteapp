@@ -25,7 +25,7 @@
   display: flex;
   justify-content: center;   
   align-items: center;
-  margin-top: 150px;       
+  margin-top: 20px;       
   padding: 20px 0;
   height: 160px;          
 }

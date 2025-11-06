@@ -1,25 +1,33 @@
 @use "_fonts.scss";
 
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vw; /* plein écran */
-  margin: 0;
-  
-}
+
 
 .about {
   font-family: "Tilt", Calibri, sans-serif;
   color: hsl(232, 10%, 34%);
-  width: 800px;
+ max-width: 800px;
   font-size: large;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  flex-direction: column;
+  margin: 0 auto;
+  
 
+
+  
 
 .team-photo{
     text-align: center;
 
 }
+
+
+
+}
+
+
+
 

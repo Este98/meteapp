@@ -1,9 +1,5 @@
 <script setup>
 
-
-
-
-
 </script>
 
 <template>
@@ -38,7 +34,7 @@
  et respectueuse de la vie privée de nos utilisateurs.
  </p>
 
-<p>
+
  💌 Pour nous contacter : <br>
  <ul>
  <li><a href="https://www.linkedin.com/in/khalil-echchine-belkacem-95839736a/">Khalil ECHCHINE BELKACEM</a><br></li>
@@ -47,7 +43,8 @@
  <li> <a href="https://www.linkedin.com/in/esteban-lerussard-55a865294/">Esteban LERUSSARD</a><br></li> 
 </ul>
 
-</p>
+
+
  
 </section>
 </template>

@@ -25,5 +25,6 @@ export async function fetchMeteo(villeCode) {
       icon: data.current_condition.icon
     },
     days
-  };
+  };  
 }
+
