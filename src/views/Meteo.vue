@@ -36,7 +36,7 @@ watch(ville, chargerMeteo);
 
 <template>
   <div class="meteo-view">
-    
+
 
     <form class="form-list" @submit.prevent>
       <label for="ville" class="form-label">Choisir une ville :</label>
@@ -71,8 +71,21 @@ watch(ville, chargerMeteo);
               <p>Soir</p>
             </div>
             <div class="row">
-
+              <img :src="meteo.current.icon" alt="meteo actuelle" width="64" height="64" />
+              <img :src="meteo.current.icon" alt="meteo actuelle" width="64" height="64" />
+              <img :src="meteo.current.icon" alt="meteo actuelle" width="64" height="64" />
             </div>
+          </div>
+          <div v-for="j in meteo.days" :key="j.day_long" class="row">
+            <div class="card">
+              <h3>{{ j.day_long }}</h3>
+              <img :src="j.icon" :alt="j.condition" width="64" height="64" />
+              <div class="row">
+                <p>{{ j.tmin }}°C</p>
+                <p>{{ j.tmax }}°C</p>
+              </div>
+            </div>
+
           </div>
         </div>
 
