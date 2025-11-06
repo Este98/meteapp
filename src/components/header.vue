@@ -1,8 +1,10 @@
 <template>
   <header class="header">
     <div class="logo-container">
-      <img src="/images/logo.png" alt="Logo du site" class="logo" />
-      <h1>METEAPP</h1>
+      <RouterLink :to= "{name: 'Meteo'}" class="link">
+        <img src="/images/logo.png" alt="Logo du site" class="logo" />
+        <h1>METEAPP</h1>
+      </RouterLink>
     </div>
   </header>
 </template>
@@ -50,6 +52,10 @@ h1 {
   color: #4E505F;
 }
 
+.link {
+  text-decoration: none;
+  color: inherit;
+}
 
 
 </style>

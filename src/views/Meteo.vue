@@ -35,17 +35,19 @@ watch(ville, chargerMeteo);
 
 
 <template>
-  <div class="">
-    <h1 class="">🌦️ Météo — Gironde</h1>
+  <div class="meteo-view">
+    
 
-    <form class="d-flex flex-column align-items-center gap-2" @submit.prevent>
+    <form class="form-list" @submit.prevent>
       <label for="ville" class="form-label">Choisir une ville :</label>
-      <div class="d-flex gap-2">
+      <div class=" selection d-flex gap-2">
         <select id="ville" v-model="ville" class="form-select w-auto">
           <option v-for="v in villes" :key="v.code" :value="v.code">{{ v.nom }}</option>
         </select>
       </div>
     </form>
+
+    <h1 class="title">{{}}</h1>
 
     <div class="mt-4">
       <div v-if="loading" class="alert alert-secondary">Chargement...</div>
@@ -53,7 +55,6 @@ watch(ville, chargerMeteo);
 
       <div v-else-if="meteo">
         <div class="text-center mb-3">
-          <h2>{{ meteo.city }}</h2>
           <p>{{ meteo.current.condition }} — {{ meteo.current.tmp }}°C</p>
           <img :src="meteo.current.icon" alt="meteo actuelle" width="64" height="64" />
         </div>
@@ -72,8 +73,3 @@ watch(ville, chargerMeteo);
     </div>
   </div>
 </template>
-
-
-<style scoped>
-
-</style>

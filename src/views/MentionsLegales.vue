@@ -1,9 +1,13 @@
 <script setup>
 
+
+
+
 </script>
 
 
 <template>
+
     <div class="mentions-legales">
     <h1>Mentions légales</h1>
     <h2>Identité de l'éditeur&nbsp;:</h2>

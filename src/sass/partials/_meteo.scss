@@ -1,0 +1,21 @@
+@use "_var.scss";
+@use "_fonts.scss";
+
+.meteo-view {
+    
+    .form-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+
+        .selection {
+            display: flex;
+            gap: 0.5rem;
+        }
+    }
+
+    .title {
+        text-align: center;
+    }
+}
