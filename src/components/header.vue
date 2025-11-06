@@ -26,7 +26,7 @@
   justify-content: center;   
   align-items: center;       
   padding: 20px 0;
-  height: 160px;             
+  height: 160px;          
 }
 
 /* conteneur vertical */

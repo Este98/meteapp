@@ -9,7 +9,7 @@ const routes = [
   { path: '/', name: 'Meteo', component: Meteo },
   {path: '/a-propos', name: 'APropos', component: APropos },
   {path: '/mentions-legales', name: 'MentionsLegales', component: MentionsLegales },
-  {path: '/404', name: 'not-found', component: NotFound }
+  {path: '/:catchAll(.*)*', name: 'not-found', component: NotFound }
 ];
 
 const router = createRouter({
