@@ -36,22 +36,32 @@
         justify-content: center;
         align-items: center;
         margin-top: 2rem;
+        gap: 1rem;
+        width: 1200px;
 
-        .card {
+        .main-card {
             @include card-style;
 
             text-align: center;
-            width: 360px;
+            width: 500px;
             border-radius: 4px;
             padding: 0 1.2rem;
             justify-content: space-between;
 
+            .min {
+                color: $color-min;
+            }
+
+            .max {
+                color: $color-max;
+            }
+            
             .row {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-                gap: 1.5rem;
+                gap: 5rem;
 
                 .min-max {
                     display: flex;
@@ -61,6 +71,37 @@
                 }
             }
 
+        }
+        
+        .container-cards {
+           display: flex;
+           justify-content: center;
+           gap: 1rem;
+           
+           .row {
+            display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 5rem;
+                
+           }
+           
+
+           .card {
+            @include card-style;
+            
+            border-radius: 4px;
+            width: 260px;
+
+             .min {
+                color: $color-min;
+            }
+
+            .max {
+                color: $color-max;
+            }
+        }
         }
     }
 
