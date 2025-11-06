@@ -22,10 +22,10 @@ import HeaderComponent from "./components/header.vue";
 .page {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 98vh;
 }
 
 .main {
-  flex-grow: 1;
+  flex-direction: row;
 }
 </style>
