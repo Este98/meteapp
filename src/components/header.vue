@@ -47,6 +47,7 @@ h1 {
   margin-top: 10px;          
   font-size: 1.8rem;
   font-weight: bold;
+  color: #4E505F;
 }
 
 
