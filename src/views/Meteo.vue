@@ -1,19 +1,42 @@
 <script setup>
 import { ref, onMounted, watch } from "vue";
-import { fetchMeteo } from "../services/meteo.js";
+import { fetchMeteo, API_BASE } from "../services/meteo.js";
+import { villesGironde } from "../data/villesGironde.js";
 
-const villes = [
-  { code: "bordeaux", nom: "Bordeaux" },
-  { code: "arcachon", nom: "Arcachon" },
-  { code: "libourne", nom: "Libourne" },
-  { code: "blaye", nom: "Blaye" },
-  { code: "langon", nom: "Langon" }
-];
+const villesATester = [];
+villesGironde.forEach(v => villesATester.push({code: v.toLowerCase(), nom: v}))
 
 const ville = ref("bordeaux");
+const villesDispo = ref([]);
+const villes = ref([]);
 const meteo = ref(null);
 const loading = ref(false);
 const error = ref("");
+
+async function verifierVille(code) {
+  try {
+    const res = await fetch (`${API_BASE}/${code}`);
+    if(!res.ok) return false;
+    const data = await res.json();
+    return !!data?.city_info?.name;
+  } catch {
+    return false;
+  }
+}
+
+async function chargerVilles() {
+  const promises = villesATester.map(async (v) => {
+    const valide = await verifierVille(v.code);
+    return valide ? v : null;
+  })
+
+  const resultats = await Promise.all(promises);
+  villesDispo.value = resultats.filter(Boolean).sort((a, b) =>
+    a.nom.localeCompare(b, "fr")
+  );
+  villes.value = villesDispo.value;
+
+}
 
 async function chargerMeteo() {
   error.value = "";
@@ -28,9 +51,13 @@ async function chargerMeteo() {
   }
 }
 
-onMounted(chargerMeteo);
-
+onMounted(async () => {
+  await chargerVilles();
+  await chargerMeteo();
+});
 watch(ville, chargerMeteo);
+
+console.log(villes.value);
 </script>
 
 
@@ -56,7 +83,7 @@ watch(ville, chargerMeteo);
         <div class="container">
 
           <div class="main-card">
-            <h3 classe="card-title">Aujourd'hui</h3>
+            <h3 class="card-title">Aujourd'hui</h3>
             <div class="row row-main">
               <img :src="meteo.current.icon" alt="meteo actuelle" width="64" height="64" />
               <p class="temp">{{ meteo.current.tmp }}°C</p>

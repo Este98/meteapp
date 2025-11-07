@@ -1,5 +1,5 @@
 // src/services/meteo.js
-const API_BASE = "https://www.prevision-meteo.ch/services/json";
+export const API_BASE = "https://www.prevision-meteo.ch/services/json";
 
 export async function fetchMeteo(villeCode) {
   const res = await fetch(`${API_BASE}/${villeCode}`);

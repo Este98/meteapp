@@ -1,0 +1,22 @@
+export const villesGironde = [
+  "Andernos-les-Bains",
+  "Arcachon",
+  "Bègles",
+  "Blanquefort",
+  "Bordeaux",
+  "Bruges",
+  "Cenon",
+  "Cestas",
+  "Eysines",
+  "Gradignan",
+  "Gujan-Mestras",
+  "Lacanau",
+  "Langon",
+  "Libourne",
+  "Lormont",
+  "Mérignac",
+  "Pessac",
+  "Saint-Médard-en-Jalles",
+  "Talence",
+  "Villenave-d'Ornon"
+].sort((a, b) => a.localeCompare(b, "fr"));
