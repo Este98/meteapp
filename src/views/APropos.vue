@@ -51,6 +51,4 @@
 
 <style scoped>
 
-
-
 </style>

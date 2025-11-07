@@ -3,30 +3,79 @@
 
 
 
+
+$md: 768px;
+
+/* Base */
 .about {
   font-family: "Tilt", Calibri, sans-serif;
   color: hsl(232, 10%, 34%);
- max-width: 800px;
+  max-width: 900px;
   font-size: large;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; 
-  flex-direction: column;
+  min-height: 100vh;
   margin: 0 auto;
-  
+  padding: 1rem;
 
-
-  
-
-.team-photo{
+  h2 {
     text-align: center;
-
+    margin-bottom: 1rem;
+  }
 }
 
-
-
+/* Contenu : empilé mobile */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  margin: 3px;
 }
+
+/* Image */
+.team-photo {
+  text-align: center;
+}
+.team-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  max-width: 500px; /* optionnel: limite la largeur */
+  margin: 0 auto;
+}
+
+/* Contact */
+.contact ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Breakpoint tablette+ */
+@media (min-width: $md) {
+  .about-content {
+    flex-direction: row; /* texte + image côte à côte */
+    align-items: flex-start;
+  }
+
+  .text,
+  .team-photo {
+    flex: 1 1 300px;
+  }
+
+  .contact ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
 
 
 
