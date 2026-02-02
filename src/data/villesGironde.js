@@ -19,4 +19,4 @@ export const villesGironde = [
   "Saint-Médard-en-Jalles",
   "Talence",
   "Villenave-d'Ornon"
-].sort((a, b) => a.localeCompare(b, "fr"));
+].sort();
