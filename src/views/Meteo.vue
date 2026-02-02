@@ -32,7 +32,7 @@ async function chargerVilles() {
 
   const resultats = await Promise.all(promises);
   villesDispo.value = resultats.filter(Boolean).sort((a, b) =>
-    a.nom.localeCompare(b, "fr")
+    a.nom.localeCompare(b.nom, "fr")
   );
   villes.value = villesDispo.value;
 
