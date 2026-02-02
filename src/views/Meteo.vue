@@ -4,7 +4,7 @@ import { fetchMeteo, API_BASE } from "../services/meteo.js";
 import { villesGironde } from "../data/villesGironde.js";
 
 const villesATester = [];
-villesGironde.forEach(v => villesATester.push({code: v.toLowerCase(), nom: v}))
+villesGironde.forEach(v => villesATester.push({code: v.toLowerCase(), nom: v}));
 
 const ville = ref("bordeaux");
 const villesDispo = ref([]);
